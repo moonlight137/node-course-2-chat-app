@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "node server/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha server/**/*.test.js",
+    "test-watch": "nodemon --exec 'npm text'"
   },
   "engines": {
     "node": "18.4.0"
-    
   },
   "author": "",
   "license": "ISC",
@@ -18,5 +18,10 @@
     "git": "^0.1.5",
     "npm": "^8.13.1",
     "socket.io": "^4.5.1"
+  },
+  "devDependencies": {
+    "expect": "^28.1.1",
+    "mocha": "^10.0.0",
+    "nodemon": "^2.0.18"
   }
 }
