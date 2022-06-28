@@ -8,7 +8,7 @@ describe('isRealString', () => {
         expect(res).toBe(false); 
     });
 
-    it('should allow string with non-spacve characters', () => {
+    it('should allow string with non-space characters', () => {
         var res = isRealString('    Luis    '); 
         expect(res).toBe(true); 
     });
